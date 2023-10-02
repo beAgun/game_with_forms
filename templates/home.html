@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {{ super() }}
+    <div class="form-control">
+        <p>Are you ready to start?</p>
+        <a width=200px class="a1 form-control-field bot8" href="{{ url_for('game') }}">Yes</a>
+    </div>
+{% endblock %}

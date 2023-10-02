@@ -1,0 +1,104 @@
+html {
+    background-image: url("/static/roses.jpg");
+    background-size: cover;
+}
+
+body {
+    /*text-shadow: 1px 1px 5px black;
+    color: black;*/
+}
+
+a {
+    color: black;
+    text-decoration-line: none;
+}
+
+a::hover, a::focus {
+    text-decoration-line: underline;
+}
+
+.menu {
+    margin: 0% auto 0% auto;
+    background-color: rgb(255,255,255,0.6);
+    font: 24px Garamond;
+    display: flex;
+    justify-content: center;
+    width: 250px;
+}
+
+.menu-item {
+    padding: 2px;
+    text-decoration-line: none;
+    margin: 0px 10px 0px 10px;
+}
+
+/*.form {
+    margin: 5% auto auto auto;
+    background-color: rgb(255,255,255,0.7);
+    font: 26px Garamond;
+    padding: 15px;
+    width: 25em;
+    text-align: center;
+}*/
+
+.form-control {
+    background-color: rgb(255, 230, 230, 0.6);
+    /*background-color: transparent;*/
+    padding: 15px;
+    width: 25em;
+    margin: 20px auto auto auto;
+    font: 26px Garamond;
+    text-align: center;
+}
+
+.form-control-field{
+    font: 20px Garamond;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 2px;
+    width: 80px;
+    margin-left: 15px;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+
+bot8 {
+    background-color: #fff;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    margin: auto;
+}
+.bot8:hover, .bot8:focus {
+   border-color: rgba(82, 168, 236, 0.8);
+   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+   outline: 0 none;
+}
+
+.cache-field {
+    background: rgb(255, 255, 255, 0.6);
+    border-radius: 10px;
+}
+
+.no-way-field {
+    background: rgb(153, 204, 255, 0.6);
+    border-radius: 10px;
+}
+
+.a1 {
+    width: 500px;
+}
+
+input[type="checkbox"]:checked {
+  left: calc(100% - 19px - 3px);
+  background-color: #fff;
+}
+
+.checkbox-field {
+  width: calc(25px - 6px);
+  height: calc(25px - 6px);
+  border-radius: 50%;
+  left: 0px;
+  top: 3px;
+  background-color: #fff;
+}

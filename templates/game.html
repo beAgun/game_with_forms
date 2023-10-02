@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {{ super() }}
+    <div >
+
+        <form class="form-control" action="" method="post">
+            <div>
+                {% for i in cache %}
+                    <p class="cache-field">{{ i['description'] }}</p>
+                {% endfor %}
+                {% if no_way %}
+                    <p class="no-way-field">You can't go this way. Try again</p>
+                {% endif %}
+            </div>
+
+            <p>{{ form.hidden_tag() }}</p>
+            <p>{{ form.way.label() }}{{ form.way() }}</p>
+            <p>{{ form.number_steps.label() }}{{ form.number_steps() }}</p>
+            <p>{{ form.submit() }}</p>
+        </form>
+    </div>
+{% endblock %}
